@@ -1,19 +1,20 @@
-// Assignment code here
+// list of possible characters
 var lowerCase = "abcdefghijklmnopqrstuvwxyz";
 var upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 var Numbers = "0123456789";
 var specialChar = "!@#$%^&*()_+|?><:;";
 
+//function to generate password
 var generatePassword = function () {
 	window.alert(
-		"Your passwordm must be between 8 and 128 characters long, and shall include the following character types; Lower Case Letters, Upper Case Letters, Numbers, and Special Characters."
+		"Your password must be between 8 and 128 characters long, and shall include the following character types; Lowercase Letters, Uppercase Letters, Numbers, and Special Characters."
 	);
 	var promptPasswordLength = window.prompt("How long would you like your password to be? Passwords must be between 8 and 128 characters long!");
 	//Makes sure user gives acceptable length of password
 	if (promptPasswordLength >= 8 && promptPasswordLength <= 128) {
 		//user input for character criteria
-		var confirmLowerCase = window.confirm("Would you like to include lowercase letters?");
-		var confirmUpperCase = window.confirm("Would you like to include uppercase letters?");
+		var confirmLowerCase = window.confirm("Would you like to include Lowercase letters?");
+		var confirmUpperCase = window.confirm("Would you like to include Uppercase letters?");
 		var confirmNumbers = window.confirm("Would you like to include numbers?");
 		var confirmSpecialChar = window.confirm("Would you like to include special characters?");
 		//shows error if no character types are selected
@@ -74,7 +75,6 @@ var generatePassword = function () {
 			var password = password + passwordOptions.charAt(Math.floor(Math.random() * Math.floor(passwordOptions.length - 1)));
 		}
 		console.log(password);
-		//window.alert("your password is: " + password);
 		return password;
 	} else {
 		window.alert("Error! Your password length must be between 8 and 128 characters long and entered in as a numeric value.");
