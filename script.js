@@ -59,13 +59,14 @@ if (confirmLowerCase === false && confirmUpperCase === false && confirmNumbers =
 	var passwordOptions = specialChar;
 }
 console.log(passwordOptions);
+
 var pass = function () {
 	//create for loop to choose password characters
 	for (var i = 0; i < promptPasswordLength; i++) {
 		password = password + passwordOptions.charAt(Math.floor(Math.random() * Math.floor(passwordOptions.length - 1)));
 	}
 	console.log(password);
-	window.alert(password);
+	window.alert("your password is: " + password);
 };
 pass();
 
