@@ -12,9 +12,6 @@ var promptPasswordLength = window.prompt("How long would you like your password 
 
 if (confirmLowerCase === true && confirmUpperCase === true && confirmNumbers === true && confirmSpecialChar === true) {
 	var passwordOptions = lowerCase + upperCase + Numbers + specialChar;
-	/* for (i=0,i<promptPasswordLength,i++){
-    var password=
-  }*/
 }
 if (confirmLowerCase === true && confirmUpperCase === true && confirmNumbers === true && confirmSpecialChar === false) {
 	var passwordOptions = lowerCase + upperCase + Numbers;
@@ -62,11 +59,12 @@ console.log(passwordOptions);
 
 var pass = function () {
 	//create for loop to choose password characters
+	var myRandomPassword = "";
 	for (var i = 0; i < promptPasswordLength; i++) {
-		password = password + passwordOptions.charAt(Math.floor(Math.random() * Math.floor(passwordOptions.length - 1)));
+		var myRandomPassword = myRandomPassword + passwordOptions.charAt(Math.floor(Math.random() * Math.floor(passwordOptions.length - 1)));
 	}
-	console.log(password);
-	window.alert("your password is: " + password);
+	console.log(myRandomPassword);
+	window.alert("your password is: " + myRandomPassword);
 };
 pass();
 
