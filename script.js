@@ -1,8 +1,8 @@
 // Assignment code here
-var lowerCase = ["abcdefghijklmnopqrstuvwxyz"];
-var upperCase = ["ABCDEFGHIJKLMNOPQRSTUVWXYZ"];
-var Numbers = ["0123456789"];
-var specialChar = ["!@#$%^&*()_+|?><:;"];
+var lowerCase = "abcdefghijklmnopqrstuvwxyz";
+var upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+var Numbers = "0123456789";
+var specialChar = "!@#$%^&*()_+|?><:;";
 
 var confirmLowerCase = window.confirm("Would you like to include lowercase letters?");
 var confirmUpperCase = window.confirm("Would you like to include uppercase letters?");
